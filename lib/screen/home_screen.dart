@@ -1,5 +1,6 @@
 import 'package:app/app/app_image_path.dart';
 import 'package:app/widget/custom_avater.dart';
+import 'package:app/widget/customtextfiled.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,6 +22,14 @@ class _HomeScreenState extends State<HomeScreen> {
           CustomAvater(icons: Icons.call, ontap: (){}),
           SizedBox(width: 10,),
            CustomAvater(icons: Icons.notification_add, ontap: (){}),
+        ],
+      ),
+      body: Column(
+        children: [
+          SizedBox(height: 28,),
+          Customtextfiled(text: "search",
+          icons: Icons.search,
+          )
         ],
       ),
     );
