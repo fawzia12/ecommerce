@@ -1,5 +1,6 @@
-import 'package:app/Auth/sign_in_screen.dart';
-import 'package:app/Auth/sign_up_screen.dart';
+
+import 'package:app/features/auth/screen/sign_in_screen.dart';
+import 'package:app/features/auth/screen/sign_up_screen.dart';
 
 import 'package:app/features/auth/screen/splash_screen.dart';
 import 'package:app/common/bottom_nav_bar.dart';

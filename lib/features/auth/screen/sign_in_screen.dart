@@ -1,7 +1,9 @@
-import 'package:app/Auth/sign_up_screen.dart';
+
 import 'package:app/app/app_image_path.dart';
 import 'package:app/common/bottom_nav_bar.dart';
-import 'package:app/widget/customtextfiled.dart';
+import 'package:app/features/auth/screen/sign_up_screen.dart';
+import 'package:app/features/home/widget/customtextfiled.dart';
+
 
 import 'package:flutter/gestures.dart';
 
