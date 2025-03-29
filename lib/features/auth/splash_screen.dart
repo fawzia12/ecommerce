@@ -1,5 +1,5 @@
 import 'package:app/common/bottom_nav_bar.dart';
-import 'package:app/widget/app_logo.dart';
+import 'package:app/features/auth/widget/app_logo.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
