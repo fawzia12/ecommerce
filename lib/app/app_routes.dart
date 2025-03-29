@@ -1,7 +1,7 @@
 import 'package:app/Auth/sign_in_screen.dart';
 import 'package:app/Auth/sign_up_screen.dart';
 
-import 'package:app/auth/splash_screen.dart';
+import 'package:app/features/screen/auth/splash_screen.dart';
 import 'package:app/common/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
