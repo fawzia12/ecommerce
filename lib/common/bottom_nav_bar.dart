@@ -1,4 +1,4 @@
-import 'package:app/screen/home_screen.dart';
+import 'package:app/features/home/screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBar extends StatefulWidget {

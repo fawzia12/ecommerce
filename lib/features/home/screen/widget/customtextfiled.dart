@@ -11,15 +11,12 @@ IconData?icons;
       padding: const EdgeInsets.all(8.0),
       child: TextField(
         decoration: InputDecoration(
-          icon: Icon(
-        icons
-
-          ),
+         prefixIcon:Icon(icons) ,
           hintText: text,
           border: OutlineInputBorder(borderRadius: BorderRadius.circular(20),
           
           ),
-          enabledBorder: InputBorder.none,
+          // enabledBorder: InputBorder.none,
         ),
       ),
     );

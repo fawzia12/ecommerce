@@ -1,6 +1,6 @@
 import 'package:app/app/app_image_path.dart';
-import 'package:app/widget/custom_avater.dart';
-import 'package:app/widget/customtextfiled.dart';
+import 'package:app/features/home/screen/widget/custom_avater.dart';
+import 'package:app/features/home/screen/widget/customtextfiled.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
