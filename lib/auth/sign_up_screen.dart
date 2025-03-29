@@ -1,6 +1,7 @@
 import 'package:app/Auth/sign_in_screen.dart';
 import 'package:app/app/app_image_path.dart';
-import 'package:app/widget/customtextfiled.dart';
+import 'package:app/features/home/screen/widget/customtextfiled.dart';
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
