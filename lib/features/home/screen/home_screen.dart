@@ -3,6 +3,7 @@ import 'package:app/features/home/widget/category_item.dart';
 import 'package:app/features/home/widget/custom_avater.dart';
 import 'package:app/features/home/widget/customtextfiled.dart';
 import 'package:app/features/home/widget/home_carousel_slider.dart';
+import 'package:app/features/home/widget/product_card.dart';
 import 'package:app/features/home/widget/selection_header.dart';
 
 import 'package:flutter/material.dart';
@@ -17,10 +18,10 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: _buildAppBar(),
-        body: Padding(
+    return Scaffold(
+      appBar: _buildAppBar(),
+      body: SingleChildScrollView(
+        child: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
             children: [
@@ -32,6 +33,16 @@ class _HomeScreenState extends State<HomeScreen> {
               SelectionHeader(text: 'Categorey', ontap: () {}),
               SizedBox(height: 10),
               _buildCategoriesSection(),
+              SizedBox(height: 10),
+              SelectionHeader(text: "popular", ontap: () {}),
+              SizedBox(height: 7),
+              _buildProductSection(),
+              SizedBox(height: 8,),
+               SelectionHeader(text: "spacial", ontap: () {}),
+                _buildProductSection(),
+                  SizedBox(height: 8,),
+               SelectionHeader(text: "New", ontap: () {}),
+                _buildProductSection(),
             ],
           ),
         ),
@@ -39,19 +50,33 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
- Widget _buildCategoriesSection() {
+ Widget _buildProductSection() {
     return SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  CategoryItem(),
-                  CategoryItem(),
-                  CategoryItem(),
-                  CategoryItem(),
-                  CategoryItem(),
+                  ProductCard(),
+                    ProductCard(),
+                      ProductCard(),
+                        ProductCard(),
                 ],
               ),
             );
+  }
+
+  Widget _buildCategoriesSection() {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: [
+          CategoryItem(),
+          CategoryItem(),
+          CategoryItem(),
+          CategoryItem(),
+          CategoryItem(),
+        ],
+      ),
+    );
   }
 
   AppBar _buildAppBar() {
