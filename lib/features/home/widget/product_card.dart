@@ -56,16 +56,16 @@ class ProductCard extends StatelessWidget {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
-                          Row(
+                          Wrap(
                             children: [
                               Icon(Icons.star, color: Colors.yellow, size: 16),
                               Text(
                                 ' 3.5',
-                                style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                               ),
                             ],
                           ),
-                          Icon(Icons.favorite, color: Colors.red, size: 18),
+                          Icon(Icons.favorite_border_sharp, color: Colors.red, size: 20),
                             ],
                           ),
                         ],
